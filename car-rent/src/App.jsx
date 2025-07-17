@@ -6,6 +6,7 @@ import "./App.css";
 import Header from "./Components/Header/Header";
 import Button from "./Components/Button";
 import Select from "./Components/Select/Select";
+import GallerySlider from "./Components/Swiper";
 
 function App() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -24,11 +25,18 @@ function App() {
     { image: "/audi.jpg", title: "Audi A5 2023 Sportback Quattro" },
     { image: "/ferrari.jpg", title: "Ferrari 488 Spider" },
     { image: "bugatti.jpg", title: "Bugatti Chiron Super Sport" },
+    { image: "/audi.jpg", title: "Audi A5 2023 Sportback Quattro" },
+    { image: "/ferrari.jpg", title: "Ferrari 488 Spider" },
+    { image: "bugatti.jpg", title: "Bugatti Chiron Super Sport" },
+    { image: "/audi.jpg", title: "Audi A5 2023 Sportback Quattro" },
+    { image: "/ferrari.jpg", title: "Ferrari 488 Spider" },
+    { image: "bugatti.jpg", title: "Bugatti Chiron Super Sport" },
   ];
 
   return (
     <>
       <div className="relative h-screen w-screen overflow-hidden">
+        <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-black to-transparent z-5"></div>
         <Swiper
           ref={swiperRef}
           modules={[Autoplay]}
@@ -93,7 +101,7 @@ function App() {
           </div>
         </div>
       </article>
-
+      <GallerySlider cars={cards}></GallerySlider>
       <div className="h-[1000px]"></div>
     </>
   );
