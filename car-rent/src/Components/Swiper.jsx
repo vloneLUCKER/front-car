@@ -5,10 +5,10 @@ const GallerySlider = ({ cars }) => {
   const cards = cars;
 
   return (
-    <div className="relative h-[80vh] w-full overflow-hidden bg-white pt-20">
-      <div className="relative h-full w-full">
+    <div className="relative h-[80vh] w-full overflow-hidden bg-white pt-0">
+      <div className="relative h-full w-full mt-20">
         <div className="absolute inset-x-0 bottom-0 h-48 bg-gradient-to-t from-black to-transparent z-10 pointer-events-none"></div>
-        <div className="flex justify-between items-start absolute bottom-107 pl-15 w-[90vw]">
+        <div className="flex justify-between items-start absolute bottom-[90%] pl-15 w-[90vw]">
           <h1 className="text-5xl font-bold text-black max-w-xl ">
             Season Beast
           </h1>
@@ -61,7 +61,10 @@ const GallerySlider = ({ cars }) => {
         >
           {cards.map((card, index) => (
             <SwiperSlide key={index} className="h-full">
-              <div className="h-full w-full flex items-center justify-center">
+              <div className="h-full w-full flex items-center justify-center relative">
+                <h1 className="absolute bottom-3 left-3 text-xl">
+                  {card.title}
+                </h1>
                 <img
                   src={card.image}
                   alt={card.title}
@@ -73,9 +76,9 @@ const GallerySlider = ({ cars }) => {
         </Swiper>
       </div>
 
-      <div className="absolute bottom-0 left-0 right-0 h-1 bg-gray-700 z-30">
-        <div className="h-full bg-white w-1/3 transition-all duration-500"></div>
-      </div>
+      {/* <div className="absolute bottom-0 left-0 right-0 h-1 bg-gray-700 z-30">
+        <div className="h-full bg-white w-1/5 transition-all duration-500"></div>
+      </div> */}
     </div>
   );
 };

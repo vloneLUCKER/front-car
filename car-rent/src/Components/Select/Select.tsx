@@ -12,7 +12,7 @@ export default function Select({ text }) {
   bg-[#25282a]
   rounded-md
   focus:outline-none
-  focus:ring-2
+  focus:ring-2  
   focus:ring-gray-100
   focus:border-transparent
   appearance-none

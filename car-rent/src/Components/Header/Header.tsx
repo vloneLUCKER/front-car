@@ -6,8 +6,8 @@ export default function Header({ scrolled }) {
       className={`flex content-between h-32 ${
         scrolled
           ? "bg-black/60 backdrop-blur-lg border-none"
-          : "bg-black/0 backdrop-blur-0 border-b border-b-gray-600"
-      } fixed top-0 w-full z-10 
+          : "bg-black/15 backdrop-blur-[2px] "
+      } fixed top-0 w-full z-50 
         transition-all duration-300 ease-in-out justify-between items-center`}
     >
       <nav className="flex justify-around align-middle w-[38%]">
