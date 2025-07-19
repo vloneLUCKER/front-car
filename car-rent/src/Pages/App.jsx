@@ -3,13 +3,13 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import "./App.css";
-import Header from "./Components/Header/Header";
-import Button from "./Components/Button";
-import Select from "./Components/Select/Select";
-import GallerySlider from "./Components/Swiper";
-import Footer from "./Components/Footer";
+import Header from "../Components/Header/Header";
+import Button from "../Components/Button";
+import Select from "../Components/Select/Select";
+import GallerySlider from "../Components/Swiper";
+import Footer from "../Components/Footer";
 
-function App() {
+export function App() {
   const [isScrolled, setIsScrolled] = useState(false);
   const swiperRef = useRef(null);
   const [activeIndex, setActiveIndex] = useState(0);
@@ -35,7 +35,7 @@ function App() {
   ];
 
   return (
-    <>
+    <div>
       <div className="relative h-screen w-screen overflow-hidden">
         <div className="absolute inset-x-0 bottom-0 h-50 bg-gradient-to-t from-black to-transparent z-5"></div>
         <Swiper
@@ -221,8 +221,6 @@ function App() {
         </button>
       </div>
       <Footer></Footer>
-    </>
+    </div>
   );
 }
-
-export default App;

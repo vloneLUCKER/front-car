@@ -16,7 +16,7 @@ export default function Footer() {
         <a href="">cars for rent</a>
         <a href="">rims</a>
         <a href="">boutique</a>
-        <a href="">news</a>
+        <a href="/news">news</a>
         <a href="">dealers</a>
       </div>
       <hr />

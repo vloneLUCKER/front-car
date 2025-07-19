@@ -32,7 +32,7 @@ export default function Header({ scrolled }) {
         />
       </a>
       <nav className="flex justify-around align-middle w-[33%]">
-        <a href="#" className="  text-[18px]">
+        <a href="/news" className="  text-[18px]">
           news
         </a>
         <a href="#" className="  text-[18px]">
