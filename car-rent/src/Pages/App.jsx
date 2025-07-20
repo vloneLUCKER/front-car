@@ -1,4 +1,4 @@
-import { useEffect, useState, useRef } from "react";
+import { useState, useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
@@ -10,17 +10,8 @@ import GallerySlider from "../Components/Swiper";
 import Footer from "../Components/Footer";
 
 export function App() {
-  const [isScrolled, setIsScrolled] = useState(false);
   const swiperRef = useRef(null);
   const [activeIndex, setActiveIndex] = useState(0);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 0);
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
 
   const cards = [
     { image: "/audi.jpg", title: "Audi A5 2023 Sportback Quattro" },
@@ -84,7 +75,7 @@ export function App() {
           </div>
         </Swiper>
 
-        <Header scrolled={isScrolled} />
+        <Header />
       </div>
 
       <article className="w-full bg-black py-30 px-32">
