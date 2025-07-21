@@ -28,7 +28,7 @@ export default function Header() {
         <a href="#" className="  text-[18px]">
           cars for rent
         </a>
-        <a href="#" className="  text-[18px]">
+        <a href="/rims" className="  text-[18px]">
           rims
         </a>
         <a href="#" className=" text-[18px]">

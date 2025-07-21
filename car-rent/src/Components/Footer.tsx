@@ -12,9 +12,9 @@ export default function Footer() {
       </div>
       <hr className="bg-gray-300" />
       <div className="flex justify-around text-xl text-[#ffffff90]">
-        <a href="">models</a>
+        <a href="/models">models</a>
         <a href="">cars for rent</a>
-        <a href="">rims</a>
+        <a href="/rims">rims</a>
         <a href="">boutique</a>
         <a href="/news">news</a>
         <a href="">dealers</a>

@@ -62,6 +62,11 @@ const GallerySlider = ({ cars }) => {
           {cards.map((card, index) => (
             <SwiperSlide key={index} className="h-full">
               <div className="h-full w-full flex items-center justify-center relative">
+                {/* <div> КОГДА БД ДОПИЛЯТ РАЗКОМЕНТЬ И СТИЛИЗУЙ!!!!!!!!!!!!!!!!!!!!!!!!!!
+                    {cards[tags].map(tag)=> {
+                        <div className="">{tag}</div>
+                    }}
+                </div> */}
                 <h1 className="absolute bottom-3 left-3 text-xl">
                   {card.title}
                 </h1>
