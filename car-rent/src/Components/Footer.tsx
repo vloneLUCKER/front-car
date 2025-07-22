@@ -17,7 +17,7 @@ export default function Footer() {
         <a href="/rims">rims</a>
         <a href="">boutique</a>
         <a href="/news">news</a>
-        <a href="">dealers</a>
+        <a href="/dealer">dealers</a>
       </div>
       <hr />
       <h1 className="text-[#ffffff80] mb-2">

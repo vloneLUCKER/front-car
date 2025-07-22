@@ -110,20 +110,6 @@ export default function Rims() {
               </a>
             );
           })}
-          <div className="flex justify-center gap-28 w-full">
-            <button
-              // onClick={() => setHidden(true)}
-              className="border px-12 py-6 rounded-md hover:bg-[#ffffff20] transition-all transform ease-in-out hover:scale-110 border-[#ffffff30] hover:border-[#ffffff80]"
-            >
-              PREV
-            </button>
-            <button
-              // onClick={() => setHidden(true)}
-              className="border px-12 py-6 rounded-md hover:bg-[#ffffff20] transition-all transform ease-in-out hover:scale-110 border-[#ffffff30] hover:border-[#ffffff80]"
-            >
-              NEXT
-            </button>
-          </div>
         </div>
       </div>
       <Footer></Footer>

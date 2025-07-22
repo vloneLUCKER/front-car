@@ -46,7 +46,7 @@ export default function Header() {
         <a href="/news" className="  text-[18px]">
           news
         </a>
-        <a href="#" className="  text-[18px]">
+        <a href="/dealer" className="  text-[18px]">
           find a dealer
         </a>
         <a href="#" className="  text-[18px]">
